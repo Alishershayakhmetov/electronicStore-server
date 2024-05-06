@@ -13,19 +13,12 @@ import java.util.Map;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Document(collection = "products")
-public class SingleLanguageProduct {
+@Document(collection = "carts")
+public class Cart {
     @Id
-    private String product_id;
-    private String category;
-    private String name;
-    private String nameEn;
-    private String nameKz;
-    private String nameRu;
-    private List<String> imageURLs;
-    private int price;
-    private Map<String, Map<String, String>> characteristics;
-    private Map<String, String> description;
+    private String cartId;
+    private List<Map<String, Integer>> productIds;
     private Date createdAt;
     private Date updatedAt;
+    private Date accessedAt;
 }
