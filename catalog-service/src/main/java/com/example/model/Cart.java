@@ -17,7 +17,7 @@ import java.util.Map;
 public class Cart {
     @Id
     private String cartId;
-    private List<Map<String, Integer>> productIds;
+    private List<Map<String, Object>> productIds;
     private Date createdAt;
     private Date updatedAt;
     private Date accessedAt;
