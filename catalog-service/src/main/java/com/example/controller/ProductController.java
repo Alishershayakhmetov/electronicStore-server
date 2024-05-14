@@ -25,16 +25,12 @@ public class ProductController {
     public ResponseEntity<?> createProduct(@RequestBody Product product) {
         return service.createProduct(product);
     }
-
+    /*
     @GetMapping("/catalog/{category}")
     public ResponseEntity<List<CatalogProduct>> getCatalogByCategory(@PathVariable("category") String category ) {
         return service.getCatalogByCategory(category);
     }
-    /*
-    @GetMapping("/catalog/${category}/${page_number}")
-    public ResponseEntity<?> getCatalogByCategory(@PathVariable("category") String category, @PathVariable("page_number") String pageNumber ) {
-        return service.getCatalogByCategoryAndPageNumber(category,pageNumber);
-    }*/
+     */
     @GetMapping("/product/{name}/{language}")
     public ResponseEntity<Product> getProductByName(@PathVariable("name") String name,@PathVariable("language") String language) {
         Product product =  service.getProductByName(name);

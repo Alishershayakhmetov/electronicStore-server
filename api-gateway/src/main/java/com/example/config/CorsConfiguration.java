@@ -17,7 +17,7 @@ public class CorsConfiguration extends org.springframework.web.cors.CorsConfigur
         final CorsConfiguration corsConfig = new CorsConfiguration();
         corsConfig.setAllowedOrigins(Collections.singletonList("http://localhost:5173"));
         corsConfig.setMaxAge(3600L);
-        corsConfig.setAllowedMethods(Arrays.asList("GET", "POST"));
+        corsConfig.setAllowedMethods(Arrays.asList("GET", "POST", "DELETE"));
         corsConfig.addAllowedHeader("*");
         corsConfig.setAllowCredentials(true);
 

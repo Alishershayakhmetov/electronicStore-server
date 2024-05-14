@@ -110,7 +110,7 @@ public class ProductService {
         if (!catalogProducts.isEmpty()) {
             return new ResponseEntity<>(response, HttpStatus.OK);
         }
-        return new ResponseEntity<>(response,HttpStatus.NOT_FOUND);
+        return new ResponseEntity<>(response,HttpStatus.OK);
     }
 }
 
